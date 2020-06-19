@@ -8,6 +8,7 @@ const formSchema = Yup.object().shape({
     ["Small", "Medium", "Large", "Extra Large"],
     "Please select a size"
   ),
+  special: Yup.string().min(0, ""),
 });
 
 export default formSchema;

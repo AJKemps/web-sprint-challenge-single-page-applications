@@ -94,7 +94,7 @@ export default function Form(props) {
         />
       </label>
 
-      <button disabled={disabled}>Order!</button>
+      <button disabled={disabled}>Add to Order!</button>
     </form>
   );
 }

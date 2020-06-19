@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import Form from "./Form";
+import Order from "./Order";
 import * as Yup from "yup";
 import formSchema from "./formSchema";
 import axios from "axios";
+import { Header, BodyContainer, FormContainer } from "./Styles";
 
 const initialFormValues = {
   name: "",
@@ -127,6 +129,10 @@ const App = () => {
           disabled={disabled}
         />
       </div>
+
+      {pizzaList.map((user) => {
+        return <Order key={user.id} details={user} />;
+      })}
     </div>
   );
 };
