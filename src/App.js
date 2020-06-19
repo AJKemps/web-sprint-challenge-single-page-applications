@@ -111,28 +111,32 @@ const App = () => {
   return (
     <div className="App">
       <header>
-        <h1>Lambda Eats</h1>
+        <h1>Big Al's Pizza Parlor</h1>
 
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/pizza">Pizza</Link>
+          <Link to="/pizza">Order Pizza</Link>
         </nav>
       </header>
 
-      <div>
-        <Form
-          values={formValues}
-          onInputChange={onInputChange}
-          onCheckboxChange={onCheckboxChange}
-          onSubmit={onSubmit}
-          errors={formErrors}
-          disabled={disabled}
-        />
-      </div>
+      <Switch>
+        <Route path="/pizza">
+          <div>
+            <Form
+              values={formValues}
+              onInputChange={onInputChange}
+              onCheckboxChange={onCheckboxChange}
+              onSubmit={onSubmit}
+              errors={formErrors}
+              disabled={disabled}
+            />
+          </div>
 
-      {pizzaList.map((user) => {
-        return <Order key={user.id} details={user} />;
-      })}
+          {pizzaList.map((user) => {
+            return <Order key={user.id} details={user} />;
+          })}
+        </Route>
+      </Switch>
     </div>
   );
 };
