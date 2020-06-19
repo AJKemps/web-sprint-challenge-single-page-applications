@@ -24,7 +24,7 @@ export default function Form(props) {
       </div>
 
       <label className="form-labels">
-        Name for order&nbsp;
+        Name: &nbsp;
         <input
           value={values.name}
           onChange={onInputChange}
@@ -32,6 +32,7 @@ export default function Form(props) {
           type="text"
         />
       </label>
+      <br />
 
       <label className="form-labels">
         Size:&nbsp;
@@ -43,6 +44,7 @@ export default function Form(props) {
           <option value="Extra Large">Extra Large</option>
         </select>
       </label>
+      <br />
 
       <label>
         Pepperoni&nbsp;
@@ -53,6 +55,7 @@ export default function Form(props) {
           type="checkbox"
         />
       </label>
+      <br />
 
       <label>
         Pineapple&nbsp;
@@ -63,6 +66,7 @@ export default function Form(props) {
           type="checkbox"
         />
       </label>
+      <br />
 
       <label>
         Banana Peppers&nbsp;
@@ -73,6 +77,7 @@ export default function Form(props) {
           type="checkbox"
         />
       </label>
+      <br />
 
       <label>
         Green Pepper&nbsp;
@@ -83,6 +88,7 @@ export default function Form(props) {
           type="checkbox"
         />
       </label>
+      <br />
 
       <label className="form-labels">
         Special Instructions:&nbsp;
@@ -93,8 +99,10 @@ export default function Form(props) {
           type="text"
         />
       </label>
+      <br />
 
       <button disabled={disabled}>Add to Order!</button>
+      <br />
     </form>
   );
 }

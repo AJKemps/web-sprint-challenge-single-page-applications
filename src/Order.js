@@ -14,7 +14,8 @@ export default function Order(props) {
         transition={{ duration: 2 }}
       >
         <div className="userCard">
-          <h2>Name: {details.name}</h2>
+          <h2>Order Confirmed!</h2>
+          <h3>Name: {details.name}</h3>
           <p>Size: {details.size}</p>
           <h4>Toppings:</h4>
           <li>Pepperoni: {details.pepperoni.toString()}</li>

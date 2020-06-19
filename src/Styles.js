@@ -19,8 +19,8 @@ const Card = styled(motion.div)`
 
 const FormContainer = styled.div`
   width: 90%;
-  margin: 8% auto 0%;
-  border: 2px solid rgba(9, 9, 121, 1);
+  margin: 2% auto 0%;
+  border: 1px solid rgba(9, 9, 121, 1);
   border-radius: 3px;
   padding: 2%;
   display: flex;
@@ -39,20 +39,22 @@ const Header = styled.header`
   flex-direction: row;
   justify-content: flex-end;
   align-content: center;
+  align-items: center;
   border-bottom: 2px solid rgba(9, 9, 121, 1);
   background-color: white;
   color: #090979;
+  padding-bottom: 2%;
 `;
 
 const BodyContainer = styled.div`
   width: 90%;
   max-width: 800px;
-  padding: 5%;
+  padding: 2%;
   margin: 5% auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1.5px solid #090979;
+  border: 2px solid #090979;
   border-radius: 5px;
   box-shadow: 0px 1px 4px -2px #090979;
   background-color: white;
